@@ -1,6 +1,9 @@
 # MultiModal-Fashion-Search-Engine
 Fashion-based Search Engine with Qdrant Vector DB for semantic search
 
+https://github.com/user-attachments/assets/5d45a7b5-f7ad-4eed-baf5-827b2388fbc2
+
+
 ## 🛠️ Setup & Requirements
 
 - Python 3.12
