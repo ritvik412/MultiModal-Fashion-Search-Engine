@@ -22,3 +22,23 @@ python indexer/create_collection.py
 # Upload vectors + payloads to Qdrant
 python indexer/upload_to_qdrant_batched.py
 ```
+
+### Retriever
+```# Run Streamlit demo (local)
+streamlit run app/streamlit_app.py
+```
+```
+# Or CLI (FAISS fallback, optional)
+python retriever/query_cli.py --index index.faiss --meta meta.csv --query "a black jacket" --topk 5
+```
+
+## Code Structure and Modularity
+- Root layout (relevant files)
+```
+indexer/ # offline pipelines (feature extraction, enrichment, upload)
+retriever/ # online logic (parse, rerank, API)
+app/ # Streamlit demo
+.env # Qdrant credentials
+requirements.txt
+README.md
+```
