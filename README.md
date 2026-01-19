@@ -1,7 +1,7 @@
 # MultiModal-Fashion-Search-Engine
 Fashion-based Search Engine with Qdrant Vector DB for semantic search
 
-## How to run
+## ⚙️ How to Run
 
 - Assumes a Python 3.12 virtual environment and .env configured with Qdrant credentials (QDRANT_URL, QDRANT_API_KEY, QDRANT_COLLECTION).
 
@@ -42,3 +42,13 @@ app/ # Streamlit demo
 requirements.txt
 README.md
 ```
+
+## 🧠 ML Highlights (Why this is better than vanilla CLIP)
+- Attribute Enrichment
+Zero-shot extraction of fashion attributes using prompt-engineered CLIP text embeddings.
+
+- Query Decomposition
+Explicit parsing of color, clothing type, vibe, and environment from user queries.
+
+- Attribute-Aware Reranking
+Final ranking combines: ```CLIP similarity + attribute consistency score```
