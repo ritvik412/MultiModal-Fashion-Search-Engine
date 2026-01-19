@@ -3,7 +3,7 @@ Fashion-based Search Engine with Qdrant Vector DB for semantic search
 
 ## How to run
 
-- Assumes a Python 3.12 virtual environment and .env configured with Qdrant credentials.
+- Assumes a Python 3.12 virtual environment and .env configured with Qdrant credentials (QDRANT_URL, QDRANT_API_KEY, QDRANT_COLLECTION).
 
 ### Indexer 
 ```
